@@ -60,7 +60,7 @@ export const DEFAULT_CONTENT = {
  },
  services: { title: 'Ce curățăm', intro: '', note: '', items: [] },
  process: { title: 'Cum lucrăm', intro: '', steps: [] },
- night: { pause: '', title: '', text: '' },
+ night: { pause: '', title: 'Curat lună.', text: '' },
  contact: {
   title: 'Spune-ne ce e de curățat.', intro: '',
   phone: '0754 679 238', phoneSecondary: '', whatsappUrl: '', email: '',

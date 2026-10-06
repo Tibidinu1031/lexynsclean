@@ -333,28 +333,43 @@ body {
   .hero__actions .btn { min-height: 50px; }
 }
 
-/* ============================================================ BACKDROP GRID ==
-   A quiet construction grid: a centred dot lattice and three hairlines (the centre
-   and both content edges), mirrored around the middle of the page. */
-.services, .process, .pause, .close { position: relative; isolation: isolate; }
-.services::before, .process::before, .pause::before, .close::before {
-  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  --dot: color-mix(in oklab, var(--ink) 17%, transparent);
-  --rule: color-mix(in oklab, var(--ink) 9%, transparent);
-  --edge: calc(min(42rem, 50%) - var(--sc-gutter));
-  --cell: 32px;
-  background:
-    linear-gradient(to right, transparent calc(50% - .5px), var(--rule) calc(50% - .5px), var(--rule) calc(50% + .5px), transparent calc(50% + .5px)),
-    linear-gradient(to right, transparent calc(50% - var(--edge) - .5px), var(--rule) calc(50% - var(--edge) - .5px), var(--rule) calc(50% - var(--edge) + .5px), transparent calc(50% - var(--edge) + .5px)),
-    linear-gradient(to right, transparent calc(50% + var(--edge) - .5px), var(--rule) calc(50% + var(--edge) - .5px), var(--rule) calc(50% + var(--edge) + .5px), transparent calc(50% + var(--edge) + .5px)),
-    radial-gradient(circle, var(--dot) 1px, transparent 1.6px) calc(50% + var(--cell) / 2) 0 / var(--cell) var(--cell);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
+/* ============================================================== ORNAMENTS ==
+   Mirrored orbit ornaments (arcs, dotted arcs, rays, dots and the logo's sparkle)
+   live in the side margins, symmetric around the page centre, and fade toward the
+   content. Centred dividers open the sections. */
+.services, .process, .close { position: relative; isolation: isolate; }
+.orn {
+  position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden;
+  --orn: color-mix(in oklab, var(--accent) 40%, transparent);
+  --orn-w: min(24vw, 380px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
 }
-.night::before { --dot: rgba(232,240,234,.16); --rule: rgba(232,240,234,.075); }
+.orn::before, .orn::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: var(--orn-w);
+  background: linear-gradient(to right, var(--orn) 0%, var(--orn) 30%, transparent 92%);
+  -webkit-mask: url("assets/brand/orbit.svg") left center / 100% auto repeat-y;
+  mask: url("assets/brand/orbit.svg") left center / 100% auto repeat-y;
+}
+.orn::before { left: 0; }
+.orn::after { right: 0; transform: scaleX(-1); }
+.night .orn { --orn: rgba(132, 229, 196, .32); }
 @media (max-width: 760px) {
-  .services::before, .process::before, .pause::before, .close::before { --cell: 24px; }
+  .orn { --orn-w: 44vw; }
+  .orn::before, .orn::after { opacity: .7; }
 }
+
+.divider {
+  display: flex; align-items: center; gap: 14px;
+  width: min(26rem, 72%); margin: 0 auto clamp(2.5rem, 6vw, 4.5rem);
+  color: color-mix(in oklab, var(--ink) 34%, transparent);
+}
+.divider span { flex: 1; height: 1px; background: linear-gradient(to right, transparent, currentColor); }
+.divider span:last-child { background: linear-gradient(to left, transparent, currentColor); }
+.divider svg { flex: none; width: 84px; height: 18px; overflow: visible; }
+.divider .spark { fill: var(--accent); }
+.night .divider { color: rgba(232, 240, 234, .34); }
+.night .divider .spark { fill: var(--night-accent); }
 
 /* =============================================================== SERVICES == */
 .services { position: relative; padding-block: clamp(5rem, 11vw, 9rem) clamp(4rem, 9vw, 7rem); background: var(--paper); }
