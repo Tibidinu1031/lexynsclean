@@ -1,0 +1,11 @@
+dist/
+node_modules/
+assets-source/
+.qa/
+.claude/
+.wrangler/
+.env
+.dev.vars
+.dev.vars.*
+*.tar
+*.tar.gz

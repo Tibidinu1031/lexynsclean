@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "publicationId": "",
+  "hero": {
+    "title": "Facem curat în Sibiu,\nla orice oră.",
+    "lead": "Case, birouri, scări de bloc și spații după renovare. Venim gratuit la evaluare, apoi stabilim prețul.",
+    "secondaryLabel": "Alege serviciile",
+    "image": null
+  },
+  "services": {
+    "title": "Ce curățăm",
+    "intro": "Alege ce ți se potrivește și pune în fișă. La final o trimiți cu un singur mesaj, iar noi venim la evaluare.",
+    "note": "Fotografiile de pe site sunt ilustrative.",
+    "items": [
+      {
+        "id": "generala",
+        "title": "Curățenie generală",
+        "text": "Toată casa, de sus până jos: praf, bucătărie, baie, geamuri și pardoseli. Pentru garsoniere, apartamente, case și vile.",
+        "detail": "Bună la mutare, primăvara sau înainte de sărbători.",
+        "image": {
+          "src": "assets/photos/racleta-1600.webp",
+          "alt": "O racletă trage o dungă curată pe un geam acoperit cu spumă, cu o curte în spate.",
+          "width": 1404,
+          "height": 1600,
+          "position": "50% 45%"
+        }
+      },
+      {
+        "id": "intretinere",
+        "title": "Curățenie de întreținere",
+        "text": "Revenim periodic, în ritmul pe care îl alegi, ca să nu se mai adune nimic între două curățenii mari.",
+        "detail": "Pentru case, apartamente și birouri.",
+        "image": {
+          "src": "assets/photos/intretinere-1600.webp",
+          "alt": "Mâini care pulverizează soluție și șterg cu o lavetă blatul unei bucătării luminoase.",
+          "width": 1600,
+          "height": 1067,
+          "position": "62% 50%"
+        }
+      },
+      {
+        "id": "dupa-constructor",
+        "title": "După constructor și renovare",
+        "text": "Praful fin de după rigips, urmele de vopsea și de silicon, ambalajele rămase. Te muți într-o casă terminată, nu într-un șantier.",
+        "detail": "Pentru spații noi sau renovate.",
+        "image": {
+          "src": "assets/photos/dupa-constructor-1600.webp",
+          "alt": "Hol nou, alb, cu parchet în spic și lumină care intră printr-un luminator.",
+          "width": 1257,
+          "height": 1600,
+          "position": "50% 60%"
+        }
+      },
+      {
+        "id": "scari-bloc",
+        "title": "Scări de bloc",
+        "text": "Holuri, trepte, balustrade și geamurile casei scării, curățate la un program stabilit cu asociația.",
+        "detail": "Pentru asociații de proprietari.",
+        "image": {
+          "src": "assets/photos/scari-bloc-1600.webp",
+          "alt": "Casa scării unui bloc, cu trepte albe și balustradă roșie, în lumina de la fereastră.",
+          "width": 1600,
+          "height": 1067,
+          "position": "38% 50%"
+        }
+      },
+      {
+        "id": "birouri",
+        "title": "Birouri și spații comerciale",
+        "text": "Birouri, magazine și spații de lucru curățate în afara programului vostru, ca dimineața să găsiți totul în ordine.",
+        "detail": "Pentru firme și magazine.",
+        "image": {
+          "src": "assets/photos/birouri-1600.webp",
+          "alt": "Birou deschis, cu ferestre arcuite, mese de lucru și scaune aranjate.",
+          "width": 1600,
+          "height": 1067,
+          "position": "50% 50%"
+        }
+      },
+      {
+        "id": "hoteliera",
+        "title": "Curățenie hotelieră",
+        "text": "Camere, holuri și spații comune pentru hoteluri și pensiuni, între plecarea unui oaspete și sosirea următorului.",
+        "detail": "Pentru hoteluri, pensiuni și apartamente în regim hotelier.",
+        "image": {
+          "src": "assets/photos/hoteliera-1600.webp",
+          "alt": "Coridor de hotel cu un cărucior de curățenie și un aspirator pe mochetă.",
+          "width": 1333,
+          "height": 1600,
+          "position": "50% 60%"
+        }
+      },
+      {
+        "id": "spatii-verzi",
+        "title": "Spații verzi",
+        "text": "Gazon tuns, curte îngrijită și grădină întreținută, ca exteriorul să arate la fel de bine ca interiorul.",
+        "detail": "Peisagistică și întreținere.",
+        "image": {
+          "src": "assets/photos/spatii-verzi-1600.webp",
+          "alt": "Un om tunde marginea gazonului cu o motocositoare, lângă flori mov.",
+          "width": 1267,
+          "height": 1600,
+          "position": "50% 55%"
+        }
+      },
+      {
+        "id": "perne",
+        "title": "Curățătorie de perne eco",
+        "text": "Pernele se ridică direct de la domiciliu și se curăță cu metode ecologice.",
+        "detail": "Cu ridicare de la domiciliu.",
+        "image": {
+          "src": "assets/photos/perne-1600.webp",
+          "alt": "Perne și lenjerie albă, cu dungi de lumină de la jaluzele.",
+          "width": 1422,
+          "height": 1600,
+          "position": "50% 50%"
+        }
+      }
+    ]
+  },
+  "process": {
+    "title": "Cum lucrăm",
+    "intro": "Prețul nu se ghicește la telefon. Îl stabilim după ce vedem spațiul.",
+    "steps": [
+      {
+        "id": "suni",
+        "title": "Ne suni sau ne scrii",
+        "text": "La orice oră, inclusiv noaptea și în weekend. Programul nostru este nonstop."
+      },
+      {
+        "id": "evaluare",
+        "title": "Venim să vedem",
+        "text": "Evaluarea la fața locului este gratuită. Ne uităm la spațiu și la ce trebuie făcut."
+      },
+      {
+        "id": "pret",
+        "title": "Primești prețul",
+        "text": "Prețul îl stabilim după evaluare, nu din auzite. Îl știi înainte să începem."
+      },
+      {
+        "id": "curat",
+        "title": "Facem curat",
+        "text": "Venim la data și ora stabilite împreună și lăsăm totul în ordine."
+      }
+    ]
+  },
+  "night": {
+    "pause": "A mai rămas o singură trecere.",
+    "title": "",
+    "text": ""
+  },
+  "contact": {
+    "title": "Spune-ne ce e de curățat.",
+    "intro": "Completează fișa și trimite-o ca mesaj sau sună direct. Programul nostru este nonstop.",
+    "phone": "0754 679 238",
+    "phoneSecondary": "0740 548 753",
+    "whatsappUrl": "",
+    "email": "",
+    "address": "Strada Andrei Șaguna, Sibiu",
+    "hours": "Nonstop, 7 zile din 7",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LEXYNS+CLEAN+SIBIU&query_place_id=ChIJv4D-SHZnTEcRz1PqtJs3atI",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=LEXYNS+CLEAN+SIBIU&destination_place_id=ChIJv4D-SHZnTEcRz1PqtJs3atI",
+    "reviewUrl": "https://search.google.com/local/writereview?placeid=ChIJv4D-SHZnTEcRz1PqtJs3atI",
+    "mapEmbedUrl": "https://www.google.com/maps?cid=15161992237390910415&output=embed&hl=ro",
+    "facebookUrl": "https://www.facebook.com/people/Lexyns-CLEAN-sibiu/100092540942409/",
+    "instagramUrl": "",
+    "tiktokUrl": "",
+    "company": "LEXYNS FIRSTLEX S.R.L.",
+    "companyDetails": "CUI 48139640 · J32/910/2023"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  // Configurația Cloudflare Pages pentru Lexyns Clean.
+  // Înainte de publicarea online, înlocuiește database_id cu ID-ul bazei D1 create în contul clientului
+  // și GITHUB_REPOSITORY cu repository-ul clientului (UTILIZATOR/REPOSITORY).
+  "name": "lexyns-clean",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-01",
+  "d1_databases": [
+    {
+      "binding": "LEXYNS_DB",
+      "database_name": "lexyns-clean",
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "vars": {
+    "ADMIN_USERNAME": "admin",
+    "GITHUB_REPOSITORY": "Tibidinu1031/lexynsclean",
+    "GITHUB_BRANCH": "main"
+  }
+}
